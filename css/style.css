@@ -1,0 +1,220 @@
+body { background: #FFF; }
+
+/* -- DEFAULTS FONTS AND TEXT SETUP -- */
+
+@font-face {
+    font-family: 'dintext_proregular';
+    src: url('../fonts/pfdintextpro-regular-webfont.eot');
+    src: url('../fonts/pfdintextpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdintextpro-regular-webfont.woff') format('woff'),
+         url('../fonts/pfdintextpro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/pfdintextpro-regular-webfont.svg#pf_dintext_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dintext_promedium';
+    src: url('../fonts/pfdintextpro-medium-webfont.eot');
+    src: url('../fonts/pfdintextpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdintextpro-medium-webfont.woff') format('woff'),
+         url('../fonts/pfdintextpro-medium-webfont.ttf') format('truetype'),
+         url('../fonts/pfdintextpro-medium-webfont.svg#pf_dintext_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dintext_probold';
+    src: url('../fonts/pfdintextpro-bold-webfont.eot');
+    src: url('../fonts/pfdintextpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdintextpro-bold-webfont.woff') format('woff'),
+         url('../fonts/pfdintextpro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/pfdintextpro-bold-webfont.svg#pf_dintext_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p { margin:5px 0; }
+p.bold { font-family: 'dintext_probold'; }
+
+p, li, a {
+    font-size: 14px;
+    line-height: 14px;
+    color: #666666;
+    font-family: 'dintext_proregular';
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 38px;
+    color: #000000;
+    font-family: 'dintext_probold';
+    font-weight: normal;
+    text-transform:uppercase;
+}
+
+h3 {
+    font-size: 26px;
+    line-height:26px;
+    color: #000000;
+    font-family: 'dintext_promedium';
+}
+
+h4 {
+    font-size: 20px;
+    line-height:20px;
+    color: #FFFFFF;
+    font-family: 'dintext_probold';
+}
+
+a.blue-box,
+a.blue-box:visited {
+    background: #00a9f4;
+    display:inline-block;
+    height:26px;
+    line-height:28px;
+    margin:0;
+    padding:0 10px;
+    position:relative;
+    vertical-align:middle;
+    font-family: 'dintext_promedium';
+    font-size: 12px;
+    text-decoration:none;
+    color: #FFF;
+    text-transform:uppercase;
+}
+a.blue-box:hover,
+a.blue-box:active {
+    background:#8bd8fa;
+}
+
+span.white-arrow {
+    background:url('../images/white-arrow.png') 0 0 no-repeat;
+    display:inline-block;
+    width:17px;
+    height:26px;
+    position:relative;
+    vertical-align:middle;
+    margin-left:30px;
+}
+
+.page-divider {
+    height:50px;
+    background:url('../images/page-divider.png') 0 0 repeat-x;
+    display:block;
+    width:655px;
+}
+
+.page-wrapper {
+    width:650px;
+    background: #FFF;
+    margin:0 auto;
+}
+
+.section {
+    width:650px;
+    margin:0;
+    padding:50px 0 0 0;
+    clear:both;
+}
+
+.gradient {
+    background:url('../images/section-gradient.png') 0 0 repeat-x;
+}
+
+.section .full-width {
+    width:574px;
+    margin:0 38px;
+    clear:both;
+}
+
+p.small-blurb { width:360px; }
+
+.navigation {
+    background: #333333; /* Old browsers */
+    background: -moz-linear-gradient(top,  #333333 0%, #000000 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #333333 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #333333 0%,#000000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #333333 0%,#000000 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #333333 0%,#000000 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    height:50px;
+    width: 650px;
+}
+
+.navigation ul {
+    margin:0;
+    padding:0;
+}
+.navigation ul li {
+    height:50px;
+    display:block;
+    float:left;
+}
+.navigation ul span.spacer {
+    background:url('../images/nav-spacer.png') 0 0 no-repeat;
+    height: 50px;
+    width: 1px;
+    display:block;
+    float:left;
+    margin:0 7px;
+}
+.navigation ul li a,
+.navigation ul li a:visited {
+    font-size: 16px;
+    font-family: 'dintext_proregular';
+    text-transform:uppercase;
+    text-decoration:none;
+    height:50px;
+    line-height:50px;
+    display:block;
+    margin:0;
+    float:left;
+    color:#cccccc;
+}
+.navigation ul li a:hover,
+.navigation ul li a:active {
+    color:#FFF;
+}
+
+.navigation ul li a.navbar-brand,
+.navigation ul li a.navbar-brand:visited,
+.navigation ul li a.navbar-brand:hover,
+.navigation ul li a.navbar-brand:active {
+    text-indent:-9999px;
+    overflow:hidden;
+    background: url('../images/gopro-logo.png') 0 0 no-repeat;
+    width:110px;
+    height:50px;
+    display:block;
+    float:left;
+    margin:0 0 0 10px;
+}
+
+.carousel.section {
+    width:650px;
+    clear:both;
+    height:280px;
+    margin:0;
+    background:url('../images/carousel-bg.jpg') 0 0 repeat-x;
+}
+
+.carousel-slide {
+    padding:0 25px 0 50px;
+    float:left;
+    margin:0 0 50px 0;
+}
+
+.carousel .carousel-left {
+    float:left;
+    width: 255px;
+}
+
+.carousel .carousel-right {
+    float:right;
+}
