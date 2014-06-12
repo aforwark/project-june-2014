@@ -82,6 +82,7 @@ h4 {
 }
 h4.blue { color:#00aeef; }
 h4.gray { color:#808285; }
+h4.black { color:#000000; }
 
 .clear { clear:both; }
 .float-left { float:left; }
