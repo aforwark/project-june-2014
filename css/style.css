@@ -65,10 +65,28 @@ h3 {
 }
 
 h4 {
+    margin:5px 0;
     font-size: 20px;
     line-height:20px;
     color: #FFFFFF;
     font-family: 'dintext_probold';
+}
+
+.clear { clear:both; }
+
+.black-box {
+    background:#000;
+    margin:-3px 0 0 0;
+    padding:5px 10px;
+}
+.black-box a,
+.black-box a:visited {
+    font-family: 'dintext_probold';
+    font-size: 15px;
+    line-height: 30px;
+    margin:0;
+    color:#FFF;
+    text-decoration:none;
 }
 
 a.blue-box,
@@ -118,7 +136,6 @@ span.white-arrow {
     width:650px;
     margin:0;
     padding:50px 0 0 0;
-    clear:both;
 }
 
 .gradient {
@@ -126,9 +143,41 @@ span.white-arrow {
 }
 
 .section .full-width {
-    width:574px;
-    margin:0 38px;
-    clear:both;
+    width:600px;
+    margin:15px 25px;
+    float:left;
+}
+
+.section .half-width {
+    float:left;
+    width:290px;
+    margin:0 10px 0 0;
+}
+.full-width.photo-thumbs {
+    width:592px;
+}
+
+.photo-thumbnail {
+    float:left;
+    width:148px;
+    height:112px;
+}
+.photo-thumbnail .overlay-text {
+    opacity:0;
+}
+.photo-thumbnail:hover .overlay-text {
+    opacity:1;
+    color:rgba(255,255,255,.85);
+}
+
+.photo-thumbnail a,
+.photo-thumbnail a:visited {
+    text-decoration:none;
+    display:block;
+}
+.photo-thumbnail a:hover,
+.photo-thumbnail a:active {
+    background:#000;
 }
 
 .large-video { margin:0 0 -3px 0; }
@@ -201,7 +250,7 @@ p.small-blurb { width:360px; }
     width:650px;
     clear:both;
     height:280px;
-    margin:0;
+    margin:0 0 20px 0;
     background:url('../images/carousel-bg.jpg') 0 0 repeat-x;
 }
 
@@ -218,4 +267,30 @@ p.small-blurb { width:360px; }
 
 .carousel .carousel-right {
     float:right;
+}
+
+.product-holder {
+    padding:40px 0;
+    background:url('../images/horizontal-line.png') 0 0 no-repeat;
+}
+
+.product-holder .image-left {
+    float:left;
+    width:250px;
+    margin-left: 50px;
+}
+.product-holder .image-right {
+    float:right;
+    width:250px;
+    margin-right: 50px;
+}
+.product-holder .text-left {
+    float:left;
+    width:280px;
+    margin-left: 20px;
+}
+.product-holder .text-right {
+    float:right;
+    width: 280px;
+    margin-right: 20px;
 }
