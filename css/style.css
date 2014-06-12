@@ -1,4 +1,4 @@
-body { background: #FFF; }
+
 
 /* -- DEFAULTS FONTS AND TEXT SETUP -- */
 
@@ -38,8 +38,11 @@ body { background: #FFF; }
 
 }
 
+body { background: #FFF; font-family: 'dintext_proregular', Verdana, Arial, sans-serif; }
+
 p { margin:5px 0; }
 p.bold { font-family: 'dintext_probold'; }
+p.small { font-size:8px; }
 
 p, li, a {
     font-size: 14px;
@@ -47,7 +50,13 @@ p, li, a {
     color: #666666;
     font-family: 'dintext_proregular';
 }
-
+.photo-thumbs p { color:#999999; }
+a, a:visited {
+    color:#009fdf;
+}
+a:hover, a:active {
+    color:#00b6ff;
+}
 h2 {
     font-size: 38px;
     line-height: 38px;
@@ -71,9 +80,11 @@ h4 {
     color: #FFFFFF;
     font-family: 'dintext_probold';
 }
+h4.blue { color:#00aeef; }
+h4.gray { color:#808285; }
 
 .clear { clear:both; }
-
+.float-left { float:left; }
 .black-box {
     background:#000;
     margin:-3px 0 0 0;
@@ -126,6 +137,10 @@ span.white-arrow {
     width:655px;
 }
 
+.horizontal-line {
+    background:url('../images/horizontal-line.png') 0 0 no-repeat;
+}
+
 .page-wrapper {
     width:650px;
     background: #FFF;
@@ -141,10 +156,17 @@ span.white-arrow {
 .gradient {
     background:url('../images/section-gradient.png') 0 0 repeat-x;
 }
+.small-gradient {
+    background:url('../images/small-gradient.png') 0 0 repeat-x;
+}
+.tiny-gradient {
+    background:url('../images/tiny-gradient.png') 0 0 repeat-x;
+}
 
 .section .full-width {
     width:600px;
-    margin:15px 25px;
+    margin:0 25px;
+    padding:20px 0;
     float:left;
 }
 
@@ -293,4 +315,60 @@ p.small-blurb { width:360px; }
     float:right;
     width: 280px;
     margin-right: 20px;
+}
+
+.full-width.product-holders {
+    margin:15px 0 15px 60px;
+}
+
+.product-thumbnails {
+    float:left;
+    display:block;
+    width:115px;
+    margin:20px 10px;
+}
+.product-thumbnails .thumb-border {
+    border:1px solid #CECECE;
+    margin-top: -3px;
+}
+.product-thumbnails p.product-name {
+    color:#00aaf1;
+    font-size:12px;
+    font-family: 'dintext_probold';
+}
+.product-thumbnails p.product-price,
+.product-thumbnails .gray {
+    color:#666666;
+    font-size:12px;
+    font-family: 'dintext_probold';
+}
+.full-width .text-right {
+    float:right;
+    width: 240px;
+}
+
+.section.software h4 {
+    margin:5px 0 15px 0;
+    font-family: 'dintext_proregular';
+    font-size:18px;
+}
+.section.software p {
+    color:#808285;
+}
+
+.section.software .text-left {
+    float:left;
+    width:300px;
+}
+.section.software .text-right {
+    float:right;
+}
+.section.software ul {
+    margin:0 0 0 10px;
+}
+.section.software ul li {
+    list-style:disc;
+    color:#808285;
+    font-size:12px;
+    font-family: 'dintext_proregular';
 }
