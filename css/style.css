@@ -225,6 +225,7 @@ span.white-arrow {
 }
 .photo-thumbnail .overlay-text {
     opacity:0;
+    display:none;
 }
 .photo-thumbnail:hover .overlay-text {
     opacity:1;
@@ -240,6 +241,7 @@ span.white-arrow {
     left:0;
     color:#FFF;
     font-size:24px;
+    display:block;
 }
 
 .photo-thumbnail a,
@@ -249,7 +251,6 @@ span.white-arrow {
 }
 .photo-thumbnail a:hover,
 .photo-thumbnail a:active {
-    background:#000;
 }
 
 .large-video { margin:0 0 -3px 0; }
