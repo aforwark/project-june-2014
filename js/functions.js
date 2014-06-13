@@ -1,7 +1,8 @@
 $(window).load(function(){
     $("#navigation").sticky({
         topSpacing: 0, 
-        getWidthFrom: '#navigation' 
+        getWidthFrom: '#navigation',
+        wrapperClassName: 'sticky'
     });
     $('.dropdown li ul').hide().removeClass('fallback');
     $('.dropdown li').hover(

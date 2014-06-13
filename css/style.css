@@ -40,6 +40,8 @@
 
 body { background: #FFF; font-family: 'dintext_proregular', Verdana, Arial, sans-serif; }
 
+.sticky { z-index:10000; position:relative; }
+
 p { margin:5px 0; }
 p.bold { font-family: 'dintext_probold'; }
 p.small,
@@ -215,13 +217,29 @@ span.white-arrow {
     float:left;
     width:148px;
     height:112px;
+    position:relative;
+}
+.photo-thumbnail img {
+    z-index:1;
+    position:relative;
 }
 .photo-thumbnail .overlay-text {
     opacity:0;
 }
 .photo-thumbnail:hover .overlay-text {
     opacity:1;
-    color:rgba(255,255,255,.85);
+    background:rgba(0,159,223,.7);
+    display:block;
+    width:148px;
+    height:112px;
+    line-height:112px;
+    text-align:center;
+    z-index:100;
+    position:absolute;
+    top:0;
+    left:0;
+    color:#FFF;
+    font-size:24px;
 }
 
 .photo-thumbnail a,
