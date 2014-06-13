@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
-	<!--<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />-->
+	<link rel="stylesheet" href="css/carousel.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/reset.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 </head>
@@ -28,29 +28,79 @@
                 </ul>
             </nav>
 	    </header>
-	    <div class="section carousel">
-    	    <div class="carousel">
-    	        <div class="image-1 carousel-slide">
-    	            <div class="carousel-left">
-    	                <img src="images/slide-1-title.jpg" />
-                        <p class="bold">Smaller, lighter, mightier still.</p>
-                        <p>Introducing the most advanced GoPro yet.</p>
-    	                <a href="#" class="blue-box">Shop Cameras <span class="white-arrow"></span></a>
-    	            </div>
-    	            <div class="carousel-right">
-	                    <img src="images/slide-5-image.png" >
-    	            </div>
-    	        </div>
-    	    </div>
+	    <div class="section">
+    	    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <div class="carousel-left slide-1">
+                        <img src="images/slide-1-title.jpg" />
+                      <p class="bold">Smaller, lighter, mightier still.</p>
+                      <p>Introducing the most advanced GoPro yet.</p>
+                      <a href="#cameras" class="blue-box">Shop Cameras <span class="white-arrow"></span></a>
+                    </div>
+                    <img src="images/slide-1-image.png" alt="Slide 1" />
+                </div>
+                <div class="item">
+                    <div class="carousel-left">
+                      <h2>Remote + Bacpacs&#8482;</h2>
+                      <p>Control your camera remotely, frame your shots, play back content and more.</p>
+                      <a href="#remote" class="blue-box">Shop Remote + Bacpacs&#8482; <span class="white-arrow"></span></a>
+                    </div>
+                    <img src="images/slide-2-image.png" alt="Slide 1" />
+                </div>
+                <div class="item">
+                    <div class="carousel-left">
+                      <h2>Wear it. <br />Mount it. Love it.</h2>
+                      <p>Whatever your passion, there's a GoPro mount that will help you get the shot. Wear your camera or mount it to your gear to capture immersive footage of the moments that matter most.</p>
+                      <a href="#mounts" class="blue-box">Shop Mounts <span class="white-arrow"></span></a>
+                    </div>
+                    <img src="images/slide-3-image.png" alt="Slide 1" />
+                </div>
+                <div class="item">
+                    <div class="carousel-left">
+                      <h2>Accesorize Your GoPro
+                      <p>Get the most from your GoPro with spare batteries, chargers, replacement parts and more.</p>
+                      <a href="#accesories" class="blue-box">Shop Accesories <span class="white-arrow"></span></a>
+                    </div>
+                    <img src="images/slide-4-image.png" alt="Slide 1" />
+                </div>
+                <div class="item">
+                    <div class="carousel-left">
+                      <h2>Capture. <br/ >Create. Share.</h2>
+                      <p>From the GoPro App and GoPro Player, to GoPro Studio editing software-get all the tools you need to view and enjoy your footage, easily create pro-quality videos and share your experiences with friends across the globe.</p>
+                      <a href="#software" class="blue-box">Learn More <span class="white-arrow"></span></a>
+                    </div>
+                    <img src="images/slide-5-image.png" alt="Slide 1" />
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
     	    <div class="clear"></div>
     	    <div class="full-width">
     	        <div class="half-width">
     	            <a href="#"><img src="images/video-of-day.jpg" /></a>
-    	            <div class="black-box"><a href="#">GoPro Video of the Day</a></div>
+    	            <div class="black-box"><a href="#">GoPro Video of the Day <span class="black-arrow"></span></a></div>
     	        </div>
     	        <div class="half-width">
     	            <a href="#"><img src="images/photo-of-day.jpg" /></a>
-    	            <div class="black-box"><a href="#">GoPro Photo of the Day</a></div>
+    	            <div class="black-box"><a href="#">GoPro Photo of the Day <span class="black-arrow"></span></a></div>
     	        </div>
     	    </div>
     	    <div class="clear"></div>
@@ -68,7 +118,7 @@
     	        <div class="photo-thumbnail"><a href="#"><img src="images/content-videos-8.jpg" /></a></div>
     	        <div class="clear"></div>
     	        <div class="black-box">
-    	            <h4>GoPro Content Videos <span class="blue-arrow"></span></h4>
+    	            <h4>GoPro Content Videos <span class="black-arrow"></span></h4>
     	            <p class="small-blurb">Check out a wide variety of epic content shot around the world on a GoPro. The worlds most versitile camera.</p>
     	        </div>
     	    </div>
@@ -136,75 +186,95 @@
     	        <h2>Mounts</h2>
     	        <p class="small-blurb">Whatever your passion, there's a GoPro mount that will help you get the shot. Wear your camera or mount it to your gear to capture immersive footage of the moments that matter most.</p>
     	    </div>
-    	    <!--<div class="clear"></div>
-    	    <div class="dropdown-nav gradient">
-    	        <ul class="nav">
-    	            <li>Best Selling <span class="white-arrow"></span>
-    	                <ul>
-    	                    <li>dropdown 1</li>
-    	                </ul>
-    	            </li>
-    	            <li>Mounts<span class="white-arrow"></span>
-    	                <ul>
-    	                    <li>dropdown 1</li>
-    	                </ul>
-    	            </li>
-    	            <li>See All Mounts <span class="white-arrow"></span>
-    	                <ul>
-    	                    <li>dropdown 1</li>
-    	                </ul>
-    	            </li>
-    	        </ul>
-    	    </div>-->
-    	    <div class="full-width product-holders">
-    	        <div class="product-thumbnails">
-    	            <img src="images/product-image-1.jpg" />
-    	            <img src="images/product-1.jpg" class="thumb-border" />
-    	            <p class="product-name">Side Mount</p>
-    	            <p class="product-price">$12.99</p>
-    	        </div>
-    	        <div class="product-thumbnails">
-    	            <img src="images/product-image-2.jpg" />
-    	            <img src="images/product-2.jpg" class="thumb-border" />
-    	            <p class="product-name">Handlebar/Seatpost/Pole Mount</p>
-    	            <p class="product-price">$19.99</p>
-    	        </div>
-    	        <div class="product-thumbnails">
-    	            <img src="images/product-image-3.jpg" />
-    	            <img src="images/product-3.jpg" class="thumb-border" />
-    	            <p class="product-name">Suction Cup</p>
-    	            <p class="product-price">$14.99</p>
-    	        </div>
-    	        <div class="product-thumbnails">
-    	            <img src="images/product-image-4.jpg" />
-    	            <img src="images/product-4.jpg" class="thumb-border" />
-    	            <p class="product-name">Chesty <span class='gray'>(Chest Harness)</span></p>
-    	            <p class="product-price">$39.99</p>
-    	        </div>
-    	        <div class="product-thumbnails">
-    	            <img src="images/product-image-5.jpg" />
-    	            <img src="images/product-5.jpg" class="thumb-border" />
-    	            <p class="product-name">JAWS: Flex Clamp</p>
-    	            <p class="product-price">$49.99</p>
-    	        </div>
-    	        <div class="product-thumbnails">
-    	            <img src="images/product-image-6.jpg" />
-    	            <img src="images/product-6.jpg" class="thumb-border" />
-    	            <p class="product-name">Mic Stand Mount</p>
-    	            <p class="product-price">$14.99</p>
-    	        </div>
-    	        <div class="product-thumbnails">
-    	            <img src="images/product-image-7.jpg" />
-    	            <img src="images/product-7.jpg" class="thumb-border" />
-    	            <p class="product-name">Body Board Mount</p>
-    	            <p class="product-price">$19.99</p>
-    	        </div>
-    	        <div class="product-thumbnails">
-    	            <img src="images/product-image-8.jpg" />
-    	            <img src="images/product-8.jpg" class="thumb-border" />
-    	            <p class="product-name">Vented Head Strap Mount</p>
-    	            <p class="product-price">$14.99</p>
-    	        </div>
+    	    <div class="gradient">
+    	        <div class="dropdown">
+                    <ul>
+                        <li>
+                            <a href="#">Best Selling</a>
+                            <ul class="fallback">
+                                <li><a href="#">Sub-Link 1</a></li>
+                                <li><a href="#">Sub-Link 2</a></li>
+                                <li><a href="#">Sub-Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">By Activity</a>
+                            <ul class="fallback">
+                                <li><a href="#">Auto</a></li>
+                                <li><a href="#">Dive</a></li>
+                                <li><a href="#">Moto</a></li>
+                                <li><a href="#">Skate</a></li>
+                                <li><a href="#">Hunt + Fish</a></li>
+                                <li><a href="#">Film + Music</a></li>
+                                <li><a href="#">Ski + Snowboard</a></li>
+                                <li><a href="#">Bike</a></li>
+                                <li><a href="#">Surf + Sup</a></li>
+                                <li><a href="#">Aviation</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">See All Mounts</a>
+                            <ul class="fallback">
+                                <li><a href="#">Sub-Link 1</a></li>
+                                <li><a href="#">Sub-Link 2</a></li>
+                                <li><a href="#">Sub-Link 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+        	    </div>
+        	    <div class="clear"></div>
+        	    <div class="full-width product-holders">
+        	        <div class="product-thumbnails">
+        	            <img src="images/product-image-1.jpg" />
+        	            <img src="images/product-1.jpg" class="thumb-border" />
+        	            <p class="product-name">Side Mount</p>
+        	            <p class="product-price">$12.99</p>
+        	        </div>
+        	        <div class="product-thumbnails">
+        	            <img src="images/product-image-2.jpg" />
+        	            <img src="images/product-2.jpg" class="thumb-border" />
+        	            <p class="product-name">Handlebar/Seatpost/Pole Mount</p>
+        	            <p class="product-price">$19.99</p>
+        	        </div>
+        	        <div class="product-thumbnails">
+        	            <img src="images/product-image-3.jpg" />
+        	            <img src="images/product-3.jpg" class="thumb-border" />
+        	            <p class="product-name">Suction Cup</p>
+        	            <p class="product-price">$14.99</p>
+        	        </div>
+        	        <div class="product-thumbnails">
+        	            <img src="images/product-image-4.jpg" />
+        	            <img src="images/product-4.jpg" class="thumb-border" />
+        	            <p class="product-name">Chesty <span class='gray'>(Chest Harness)</span></p>
+        	            <p class="product-price">$39.99</p>
+        	        </div>
+        	        <div class="product-thumbnails">
+        	            <img src="images/product-image-5.jpg" />
+        	            <img src="images/product-5.jpg" class="thumb-border" />
+        	            <p class="product-name">JAWS: Flex Clamp</p>
+        	            <p class="product-price">$49.99</p>
+        	        </div>
+        	        <div class="product-thumbnails">
+        	            <img src="images/product-image-6.jpg" />
+        	            <img src="images/product-6.jpg" class="thumb-border" />
+        	            <p class="product-name">Mic Stand Mount</p>
+        	            <p class="product-price">$14.99</p>
+        	        </div>
+        	        <div class="product-thumbnails">
+        	            <img src="images/product-image-7.jpg" />
+        	            <img src="images/product-7.jpg" class="thumb-border" />
+        	            <p class="product-name">Body Board Mount</p>
+        	            <p class="product-price">$19.99</p>
+        	        </div>
+        	        <div class="product-thumbnails">
+        	            <img src="images/product-image-8.jpg" />
+        	            <img src="images/product-8.jpg" class="thumb-border" />
+        	            <p class="product-name">Vented Head Strap Mount</p>
+        	            <p class="product-price">$14.99</p>
+        	        </div>
+        	    </div>
+    	        <div class="clear"></div>
     	    </div>
 	    </div><!-- end section -->
 	    <div class="clear"></div>
@@ -214,61 +284,77 @@
     	        <h2>Accesories</h2>
     	        <p class="small-blurb">Get the most from your GoPro with spare batteries, chargers, replacement parts and more.</p>
     	    </div>
-    	    <div class="dropdown-nav">
-    	        <ul class="nav">
-    	            <li>Camera Housing <span class="white-arrow"></span>
-    	                <ul>
-    	                    <li>dropdown 1</li>
-    	                </ul>
-    	            </li>
-    	            <li>Replacement Parts<span class="white-arrow"></span>
-    	                <ul>
-    	                    <li>dropdown 1</li>
-    	                </ul>
-    	            </li>
-    	            <li>Power + Cables <span class="white-arrow"></span>
-    	                <ul>
-    	                    <li>dropdown 1</li>
-    	                </ul>
-    	            </li>
-    	            <li>See All Accesories <span class="white-arrow"></span>
-    	                <ul>
-    	                    <li>dropdown 1</li>
-    	                </ul>
-    	            </li>
-    	        </ul>
-    	    </div>
-    	    <div class="full-width product-holders">
-    	        <div class="product-thumbnails">
-    	            <img src="images/accesory-1.jpg" class="thumb-border" />
-    	            <p class="product-name">Side Mount</p>
-    	            <p class="product-price">$12.99</p>
+    	    <div class="gradient">
+    	        <div class="dropdown">
+                    <ul>
+                        <li>
+                            <a href="#">Camera Housings</a>
+                            <ul class="fallback">
+                                <li><a href="#">Sub-Link 1</a></li>
+                                <li><a href="#">Sub-Link 2</a></li>
+                                <li><a href="#">Sub-Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Replacement Parts</a>
+                            <ul class="fallback">
+                                <li><a href="#">Sub-Link 1</a></li>
+                                <li><a href="#">Sub-Link 2</a></li>
+                                <li><a href="#">Sub-Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Power + Cables</a>
+                            <ul class="fallback">
+                                <li><a href="#">Sub-Link 1</a></li>
+                                <li><a href="#">Sub-Link 2</a></li>
+                                <li><a href="#">Sub-Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">See All Accesories</a>
+                            <ul class="fallback">
+                                <li><a href="#">Sub-Link 1</a></li>
+                                <li><a href="#">Sub-Link 2</a></li>
+                                <li><a href="#">Sub-Link 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
     	        </div>
-    	        <div class="product-thumbnails">
-    	            <img src="images/accesory-2.jpg" class="thumb-border" />
-    	            <p class="product-name">Side Mount</p>
-    	            <p class="product-price">$12.99</p>
-    	        </div>
-    	        <div class="product-thumbnails">
-    	            <img src="images/accesory-3.jpg" class="thumb-border" />
-    	            <p class="product-name">Side Mount</p>
-    	            <p class="product-price">$12.99</p>
-    	        </div>
-    	        <div class="product-thumbnails">
-    	            <img src="images/accesory-4.jpg" class="thumb-border" />
-    	            <p class="product-name">Side Mount</p>
-    	            <p class="product-price">$12.99</p>
-    	        </div>
-    	        <div class="product-thumbnails">
-    	            <img src="images/accesory-5.jpg" class="thumb-border" />
-    	            <p class="product-name">Side Mount</p>
-    	            <p class="product-price">$12.99</p>
-    	        </div>
-    	        <div class="product-thumbnails">
-    	            <img src="images/accesory-6.jpg" class="thumb-border" />
-    	            <p class="product-name">Side Mount</p>
-    	            <p class="product-price">$12.99</p>
-    	        </div>
+        	    <div class="full-width product-holders">
+        	        <div class="product-thumbnails">
+        	            <img src="images/accesory-1.jpg" class="thumb-border" />
+        	            <p class="product-name">Side Mount</p>
+        	            <p class="product-price">$12.99</p>
+        	        </div>
+        	        <div class="product-thumbnails">
+        	            <img src="images/accesory-2.jpg" class="thumb-border" />
+        	            <p class="product-name">Side Mount</p>
+        	            <p class="product-price">$12.99</p>
+        	        </div>
+        	        <div class="product-thumbnails">
+        	            <img src="images/accesory-3.jpg" class="thumb-border" />
+        	            <p class="product-name">Side Mount</p>
+        	            <p class="product-price">$12.99</p>
+        	        </div>
+        	        <div class="product-thumbnails">
+        	            <img src="images/accesory-4.jpg" class="thumb-border" />
+        	            <p class="product-name">Side Mount</p>
+        	            <p class="product-price">$12.99</p>
+        	        </div>
+        	        <div class="product-thumbnails">
+        	            <img src="images/accesory-5.jpg" class="thumb-border" />
+        	            <p class="product-name">Side Mount</p>
+        	            <p class="product-price">$12.99</p>
+        	        </div>
+        	        <div class="product-thumbnails">
+        	            <img src="images/accesory-6.jpg" class="thumb-border" />
+        	            <p class="product-name">Side Mount</p>
+        	            <p class="product-price">$12.99</p>
+        	        </div>
+        	    </div>
+    	        <div class="clear"></div>
     	    </div>
 	    </div><!-- end section -->
 	    <div class="clear"></div>
@@ -278,61 +364,68 @@
     	        <h2>GoPro Software</h2>
     	        <p class="small-blurb">Getting great shots is just the beginning. With the free GoPro App and GoPro Studio video editing software, it's easier than ever to capture incredible footage, create pro-quality content and share it with the world.</p>
     	    </div>
-    	    <div class="full-width small-gradient">
-    	        <img src="images/software-1.jpg" class="float-left" />
-    	        <div class="text-right">
-    	            <h3>GoPro App</h3>
-    	            <h4 class="gray">Control. View. Share</h4>
-    	            <p>The GoPro App lets you control your camera remotely using a smartphone or tablet. Features include full camera control, live preview, photo and video playback and sharing, wireless camera updates and more.</p>
-    	            <p class="small">Available for iPhone&reg;/iPad&reg;/iPod touch&reg;, Android&#8482; and Windows Phone.</p>
-    	            <a href="#" class="app-store"><img src="images/app-store-apple.jpg" /></a>
-    	            <a href="#" class="app-store"><img src="images/app-store-google.jpg" /></a>
-    	            <a href="#" class="app-store"><img src="images/app-store-windows.jpg" /></a>
-    	        </div>
+    	    <div class="small-gradient">
+        	    <div class="full-width">
+        	        <img src="images/software-1.jpg" class="float-left" />
+        	        <div class="text-right">
+        	            <h3>GoPro App</h3>
+        	            <h4 class="gray">Control. View. Share</h4>
+        	            <p>The GoPro App lets you control your camera remotely using a smartphone or tablet. Features include full camera control, live preview, photo and video playback and sharing, wireless camera updates and more.</p>
+        	            <p class="small">Available for iPhone&reg;/iPad&reg;/iPod touch&reg;, Android&#8482; and Windows Phone.</p>
+        	            <a href="#" class="app-store"><img src="images/app-store-apple.jpg" /></a>
+        	            <a href="#" class="app-store"><img src="images/app-store-google.jpg" /></a>
+        	            <a href="#" class="app-store"><img src="images/app-store-windows.jpg" /></a>
+        	        </div>
+        	        <div class="clear"></div>
+        	    </div>
     	        <div class="clear"></div>
     	    </div>
-    	    <div class="full-width small-gradient">
-    	        <img src="images/software-2.jpg" class="float-left" />
-    	        <div class="text-right">
-    	            <h3>GoPro Studio</h3>
-    	            <h4 class="gray">GoPro edits made easy.</h4>
-    	            <p>GoPro Studio software makes it easier than ever to create professional-quality videos with your GoPro content.</p>
-    	            <p class="small">GoPro Studio is available for Windows&reg; and Mac&reg; </p>
-    	        </div>
+        	<div class="small-gradient">
+        	    <div class="full-width">
+        	        <img src="images/software-2.jpg" class="float-left" />
+        	        <div class="text-right">
+        	            <h3>GoPro Studio</h3>
+        	            <h4 class="gray">GoPro edits made easy.</h4>
+        	            <p>GoPro Studio software makes it easier than ever to create professional-quality videos with your GoPro content.</p>
+        	            <p class="small">GoPro Studio is available for Windows&reg; and Mac&reg; </p>
+        	        </div>
+        	        <div class="clear"></div>
+        	    </div>
+        	    <div class="full-width horizontal-line">
+        	        <div class="text-left">
+        	            <h4 class="blue">Key Features</h4>
+        	            <ul>
+            	            <li>GoPro Edit Templates make it easy to create GoPro-style videos</li>
+                            <li>Trim, edit and mix video clips</li>
+                            <li>Add titles, music, audio tracks and more</li>
+                            <li>Fisheye adjustment control</li>
+                            <li>Adjust video playback speed for fast or slow motion</li>
+                            <li>Export video still frames at full resolution</li>
+                            <li>Create videos from time-lapse photo sequences</li>
+                            <li>Supports GoPro, Canon®, Nikon® and other constant framerate H.264 mp4 and .mov formats</li>
+                            <li>Adjust video playback speed for fast or slow motion</li>
+                        </ul>
+        	        </div>
+        	        <div class="text-right software-form">
+                        <h4 class="black">Download GoPro Studio 2.0.1</h4>
+                        <p class="small">To download GoPro Studio, please provide the following information:</p>
+                        <p class="small">View <a href="#">minimum system requirements</a></p>
+                        <p class="small"><span class="red">*</span><span class="gray"> REQUIRED FIELDS</span></p>
+                        <form class="download-form">
+                            <label><span class="red">*</span>Operating System</label>
+                            <select>
+                                <option>Mac (OS X 10.6, 10.7, 10.8, 10.9)</option>
+                            </select>
+                            <label><span class="red">*</span>Email:</label>
+                            <input type="text" placeholder="Email" />
+                            <input type="submit" value="Download Now" class="submit" />
+                        </form>
+        	        </div>
+        	    </div>
     	        <div class="clear"></div>
-    	    </div>
-    	    <div class="full-width horizontal-line">
-    	        <div class="text-left">
-    	            <h4 class="blue">Key Features</h4>
-    	            <ul>
-        	            <li>GoPro Edit Templates make it easy to create GoPro-style videos</li>
-                        <li>Trim, edit and mix video clips</li>
-                        <li>Add titles, music, audio tracks and more</li>
-                        <li>Fisheye adjustment control</li>
-                        <li>Adjust video playback speed for fast or slow motion</li>
-                        <li>Export video still frames at full resolution</li>
-                        <li>Create videos from time-lapse photo sequences</li>
-                        <li>Supports GoPro, Canon®, Nikon® and other constant framerate H.264 mp4 and .mov formats</li>
-                        <li>Adjust video playback speed for fast or slow motion</li>
-                    </ul>
-    	        </div>
-    	        <div class="text-right software-form">
-                    <h4 class="black">Download GoPro Studio 2.0.1</h4>
-                    <p class="small">To download GoPro Studio, please provide the following information:</p>
-                    <p>View <a href="#">minimum system requirements</a></p>
-                    <p><span class="red">*</span>REQUIRED FIELDS</p>
-                    <form>
-                        <label><span class="red">*</span>Operating System</label>
-                        <select>
-                            <option>Mac (OS X 10.6, 10.7, 10.8, 10.9)</option>
-                        </select>
-                        <label><span class="red">*</span>Email:</label>
-                        <input type="text" placeholder="Email" />
-                    </form>
-    	        </div>
     	    </div>
     	    <div class="clear"></div>
-    	    <div class="small-gradient">&nbsp;</div>
+    	    <div class="small-gradient margin">&nbsp;</div>
 	    </div><!-- end section -->
 	    
 	</div><!-- end wrapper -->
