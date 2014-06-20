@@ -3,6 +3,16 @@
 /* -- DEFAULTS FONTS AND TEXT SETUP -- */
 
 @font-face {
+    font-family: 'PFDinTextProLight';
+    src: url('../fonts/pfdintextpro-light.eot');
+    src: url('../fonts/pfdintextpro-light.eot') format('embedded-opentype'),
+         url('../fonts/pfdintextpro-light.woff') format('woff'),
+         url('../fonts/pfdintextpro-light.ttf') format('truetype'),
+         url('../fonts/pfdintextpro-light.svg#PFDinTextProLight') format('svg');
+}
+
+
+@font-face {
     font-family: 'dintext_proregular';
     src: url('../fonts/pfdintextpro-regular-webfont.eot');
     src: url('../fonts/pfdintextpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -38,20 +48,20 @@
 
 }
 
-body { background: #FFF; font-family: 'dintext_proregular', Verdana, Arial, sans-serif; }
+body { background: #FFF; font-family: 'PFDinTextProLight', Verdana, Arial, sans-serif; }
 
 .sticky { z-index:10000; position:relative; }
 
 p { margin:5px 0; }
-p.bold { font-family: 'dintext_probold'; }
+p.bold { font-family: 'dintext_promedium'; }
 p.small,
 p.small a { font-size:8px; line-height:8px; }
 
 p, li, a {
     font-size: 14px;
-    line-height: 14px;
-    color: #666666;
-    font-family: 'dintext_proregular';
+    line-height: 16px;
+    color: #b9b9b9;
+    font-family: 'PFDinTextProLight';
 }
 .photo-thumbs p { color:#999999; }
 a, a:visited {
@@ -65,16 +75,16 @@ h2 {
     font-size: 38px;
     line-height: 38px;
     color: #000000;
-    font-family: 'dintext_probold';
+    font-family: 'dintext_promedium';
     font-weight: normal;
-    text-transform:uppercase;
+    text-transform:none;
 }
 
 h3 {
     font-size: 26px;
     line-height:26px;
     color: #000000;
-    font-family: 'dintext_promedium';
+    font-family: 'dintext_proregular';
 }
 
 h4 {
@@ -82,7 +92,7 @@ h4 {
     font-size: 20px;
     line-height:20px;
     color: #FFFFFF;
-    font-family: 'dintext_probold';
+    font-family: 'dintext_promedium';
 }
 h4.blue { color:#00aeef; }
 h4.gray { color:#808285; }
@@ -99,7 +109,7 @@ h4.black { color:#000000; }
 }
 .black-box a,
 .black-box a:visited {
-    font-family: 'dintext_probold';
+    font-family: 'dintext_proregular';
     font-size: 15px;
     line-height: 30px;
     margin:0;
@@ -116,7 +126,7 @@ a.blue-box:visited {
     margin:0;
     padding:0 10px;
     vertical-align:middle;
-    font-family: 'dintext_promedium';
+    font-family: 'dintext_proregular';
     font-size: 12px;
     text-decoration:none;
     color: #FFF;
@@ -133,7 +143,7 @@ a.learn-more:visited {
     text-decoration:none;
     text-transform:uppercase;
     font-size:13px;
-    font-family: 'dintext_probold';
+    font-family: 'dintext_promedium';
 }
 
 span.black-arrow {
@@ -199,7 +209,7 @@ span.white-arrow {
 
 .section .full-width {
     width:600px;
-    margin:10px 25px 30px 25px;
+    margin:10px 25px 50px 25px;
 }
 
 .section .half-width {
@@ -285,12 +295,12 @@ p.small-blurb { width:360px; }
     width: 1px;
     display:block;
     float:left;
-    margin:0 6px;
+    margin:0 7px;
 }
 .navigation ul li a,
 .navigation ul li a:visited {
     font-size: 16px;
-    font-family: 'dintext_proregular';
+    font-family: 'PFDinTextProLight';
     text-transform:uppercase;
     text-decoration:none;
     height:50px;
@@ -333,6 +343,7 @@ p.small-blurb { width:360px; }
     margin:30px 0 0 0;
     padding:0;
     font-size:26px;
+    text-transform:uppercase;
 }
 
 .carousel .carousel-control {
@@ -374,9 +385,11 @@ p.small-blurb { width:360px; }
 }
 
 .carousel .carousel-inner {
-    padding:0 0 0 50px;
+    padding:0;
     float:left;
     margin:0;
+    width: 560px;
+    margin: 0 40px;
 }
 
 .carousel .carousel-left {
@@ -385,6 +398,12 @@ p.small-blurb { width:360px; }
 }
 .carousel .carousel-left.slide-1 {
     margin-top:30px;
+}
+.carousel .carousel-left.slide-3 h2 {
+    margin:10px 0 0 0;
+}
+.carousel .carousel-left.slide-5 h2 {
+    margin:0;
 }
 
 .product-holder {
@@ -430,17 +449,42 @@ p.small-blurb { width:360px; }
 .product-thumbnails p.product-name {
     color:#00aaf1;
     font-size:12px;
-    font-family: 'dintext_probold';
+    font-family: 'dintext_promedium';
+    margin:0;
+    line-height:14px;
 }
 .product-thumbnails p.product-price,
 .product-thumbnails .gray {
     color:#666666;
     font-size:12px;
-    font-family: 'dintext_probold';
+    font-family: 'dintext_promedium';
+    margin:0;
+    line-height:14px;
+}
+.accessories .full-width.product-holders { 
+    width:610px;
+    margin:0 20px;
+}
+.accessories .product-thumbnails {
+    float:left;
+    display:block;
+    width:131px;
+    margin: 60px 10px 20px 10px;
+    line-height:14px;
+}
+.accessories .product-thumbnails .thumb-border {
+    border:1px solid #CECECE;
+    margin-top: -3px;
 }
 .full-width .text-right {
     float:right;
     width: 240px;
+}
+.section.software { padding:40px 0 0 0; }
+.section.mounts h2,
+.section.accessories h2,
+.section.software h2 {
+    padding:20px 0 0 0;
 }
 
 .section.software h4 {
@@ -458,6 +502,7 @@ p.small-blurb { width:360px; }
 }
 .section.software .text-right {
     float:right;
+    margin:30px 0 0 0;
 }
 .section.software ul {
     margin:0 0 0 10px;
